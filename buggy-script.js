@@ -8,7 +8,7 @@ const target = process.argv[3];
 const contentsOfSource = fs.readFileSync(source, 'utf-8');
 
 // get lines of source into an array, remove empty lines
-const linesInSource = contentofSource.split('\n').filter(Boolean);
+const linesInSource = contentsOfSource.split('\n').filter(Boolean);
 
 // make the target dir if it doesn't exist  
 if (!fs.existsSync(target)) {
